@@ -1,0 +1,41 @@
+<!-- BLOG LISTING PAGE -->
+<div class="content-grid-container">
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="grid-container outline">
+    <div class="col-3 article_list_header center-div">
+      <h1>Latest Articles</h1>
+    </div>
+    <div class="col-3 center-div bottom-border"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="row">
+    {{#sort_list items sort="published_on" order="desc"}}
+      <!-- <div class="spacer"></div> -->
+      <div class="col-3 article center-div">
+        {{#each fields.hero_image}}
+          <div class="col-2 show_image" style="background-image: url('{{secure_url}}');">
+        {{/each}}
+        </div> 
+        <div class="col-4 article-list-text">
+          <div class="article-list-title">
+            <a href="{{slug}}">{{fields.title}}</a>
+          </div>
+          <div class="article-list-date">
+            <h4>{{format_date published_on "%B %d, %Y"}}</h4>
+          </div>          
+          <div class="article-list-content listing-summary">
+            <p>{{{fields.content}}}</p>
+          </div>
+        </div> 
+      </div> <!-- article -->
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+    {{/sort_list}}
+    </div> <!-- row -->
+    <div class="spacer"></div>
+  </div> <!-- grid-container -->
+</div>

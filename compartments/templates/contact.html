@@ -1,0 +1,60 @@
+<!-- CONTACT PAGE VIEW -->
+<div class="content-grid-container">
+  <div class="col-6 spacer"></div>
+  <div class="col-6 spacer"></div>
+  <div class="col-6 spacer"></div>
+  <div class="col-6 spacer"></div>
+  <div class="col-6 spacer"></div>
+  <div class="grid-container outline">
+    <div class="col-3 article_list_header center-div ">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="col-3 center-div bottom-border"></div>
+    <div class="row">
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+      {{#each fields.hero_image}}
+        <div class="center-div col-6 article-header-image show_image" style="background-image: url('{{secure_url}}'); background-size: contain;">
+        </div>
+      {{/each}}
+    </div>
+    <div class="row">
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+      <div class="contact-container col-4 center-div">
+        <div class="col-3">
+          <div class="contact_container">
+            <!-- Play error messages -->
+            <div id="form-messages"></div>  
+              <div class="contact_form">
+                <form action="https://docs.google.com/forms/d/1Zo6jGqLy5Xd4cNztQ49OPgpBP8TXUWQ84EkP9ykEuqc/formResponse" id="contact-form" method="POST" target="hidden_iframe">
+                  <div class="fieldset">
+                    <input type="text" name="entry.773169917" placeholder="First Name" value="" id="entry_773169917">
+                  </div>
+                  <div class="fieldset">
+                    <input type="text" name="entry.1356310070" value="" placeholder="Last Name" id="entry_1356310070">
+                  </div>
+                  <div class="fieldset">
+                    <input type="text" name="entry.598479519" value="" placeholder="Email" id="entry_598479519">
+                  </div>
+                  <div class="text_area">
+                    <input type="text" name="entry.783862788" value="" placeholder="Please leave us a message" id="entry_783862788">
+                  </div>
+                  <div class="fieldset"> 
+                      <button onclick="clearFields()" type="submit" id="contact_submit" name="submit" value="Submit">Send Message</button>
+                  </div>
+                </form>
+              </div> <!-- contact_form -->
+            </div> <!-- form-messages -->
+          </div> <!-- container -->
+        <div class="col-3 article-content">
+          <p>{{{fields.content_1}}}</p>
+        </div>
+        
+      </div>
+      <div class="col-6 spacer"></div>
+      <div class="col-6 spacer"></div>
+      <div class="col-6 spacer"></div>
+    </div> <!-- row -->
+  </div>
+</div>

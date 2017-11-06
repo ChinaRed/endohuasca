@@ -1,0 +1,75 @@
+// ARTICLE LISTING VIEW
+.article_list_header{
+  padding-left: 0;
+  padding-bottom: 10px;
+}
+
+.article{
+  // padding: 5px 0;
+    // border-bottom: 1px solid $base-color-1;
+    // border-top: 1px solid $base-color-1;
+  a{
+    color: $content-font-color;
+  }
+  // border: 1px solid white;
+  &:hover{
+    // border-top: 1px solid $link-color;
+    // box-shadow: 1px 1px 1px 1px $link-color;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    a{
+      text-decoration: underline;
+      color: $link-color;
+    }
+  }
+}
+
+
+.article-list-text{
+  // padding-top: 0;
+  padding-left: 12.5px;
+  .article-list-date{
+    padding-top: 3px;
+    // font-size: 3em;
+    p{
+      color: #00B5A3;
+    }
+  }
+  .article-list-title{
+    font-size: 1.1em;
+  }
+  .article-list-content{
+    padding-top: 5px;
+    font-size: .8em;
+    text-overflow:ellipsis;
+  }
+}
+
+// ARTICLE DETAIL VIEW
+// .center-image{
+//   p{  
+//     img{
+//       text-align: center;
+//     }
+//   }
+// }
+ 
+.article-header-image{
+  height: 300px;
+  h1{
+  // position: absolute;
+  text-align: left;
+  font-size: 1.5em;
+  text-transform: none;
+  // TEXT OVER ARTICLE HERO IMAGE
+  padding-top: 290px;
+  padding-left: 10px;
+  color: white;
+  margin: 0;
+  word-wrap: break;
+  }
+}

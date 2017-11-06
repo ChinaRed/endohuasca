@@ -1,0 +1,37 @@
+<!-- PODCAST DETAIL VIEW -->
+<div class="content-grid-container">
+  <div class="grid-container outline">
+    <div class="row">
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+      <div class="col-3 center-div">
+        <a href="/podcast"><h3>< back</h3></a>
+      </div>
+      <div class="spacer"></div>
+      <div class="col-3 center-div">
+        <h2>{{fields.title}}</h2>
+      </div>
+      <div class="spacer"></div>
+      <div class="col-3 center-div" style="font-style: italic;">
+        <h3>Published {{format_date published_on "%B %d, %Y"}}</h3>
+      </div>
+      <div class="spacer"></div>
+      <div class="col-3 center-div">
+        <div class="col-6 style" style="padding-top: 20px">
+          <iframe frameborder='0' height='50px' width='100%' scrolling='no' seamless src='{{fields.embed_code}}'></iframe>
+        </div> 
+      </div>
+      <div class="spacer"></div>
+      <div class="col-3 center-div">
+        <strong>Episode Breakdown<strong>
+        <div class="spacer"></div>
+        <p>{{{fields.podcast_program}}}</p>
+      </div>
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+    </div> <!-- row -->
+  </div> <!-- grid-container -->
+</div>
